@@ -1,1 +1,0 @@
-# newindexgabi.github.io
