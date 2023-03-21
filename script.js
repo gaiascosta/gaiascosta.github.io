@@ -11,23 +11,25 @@ form.addEventListener("submit", e =>
 function lerAtualizar(){
     let ph = document.getElementById('ph').value;
     let temperature = document.getElementById('temperature').value;
-    drawChart(ph, temperature);
-    alert(parseInt(ph) + parseInt(temperature))
+    let alcalinidade = document.getElementById('alcalinidade').value;
+    let nitrito = document.getElementById('nitrito').value;
+    drawChart(ph, temperature, alcalinidade, nitrito);
+    // alert(parseInt(ph) + parseInt(temperature) + parseInt(alcalinidade) + parseInt(nitrito))
 }
 
-function drawChart(x, y) {
+function drawChart(w, x, y, z) {
     var data = google.visualization.arrayToDataTable([
-        ['Year', 'Sales'],
-        ['2013',  parseInt(x)],
-        ['2014',  parseInt(y)],
-        ['2015',  660],
-        ['2016',  1030]
+        ['', ''],
+        ['pH',  parseFloat(w)],
+        ['Temperatura',  parseFloat(x)],
+        ['Alcalinidade',  parseFloat(y)],
+        ['Nitrito',  parseFloat(z)]
       ]);
 
 
     var options = {
-      title: 'Company Performance',
-      hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
+      title: 'Aquaponia',
+      hAxis: {title: 'Dados',  titleTextStyle: {color: '#333'}},
       vAxis: {minValue: 0}
     };
 
