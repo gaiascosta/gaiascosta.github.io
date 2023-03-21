@@ -14,7 +14,7 @@ function lerAtualizar(){
     let alcalinidade = document.getElementById('alcalinidade').value;
     let nitrito = document.getElementById('nitrito').value;
     drawChart(ph, temperature, alcalinidade, nitrito);
-    // alert(parseInt(ph) + parseInt(temperature) + parseInt(alcalinidade) + parseInt(nitrito))
+    //alert(parseInt(ph) + parseInt(temperature) + parseInt(alcalinidade) + parseInt(nitrito))
 }
 
 function drawChart(w, x, y, z) {
