@@ -4,33 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript" defer src="script.js"></script>
+    <link rel="stylesheet" href="grid.css">
 </head>
 <body>
-    <h1>Aquaponia</h1>
-    <form id="form" action="/" method="GET">
-        <div>
-            <label for="ph">pH:</label>
-            <input type="number" id="ph">
+    <div class="container">
+
+        <form id="form" action="/" method="get">
+            <div class="phForm">
+                <div class="formStyle">
+                    <label for="phSegunda">Segunda:</label>
+                    <input type="number" id="phSegunda">
+                </div>
+                <div class="formStyle">
+                    <label for="phTerça">Terça:</label>
+                    <input type="number" id="phTerça">
+                </div>
+                <div class="formStyle">
+                    <label for="phQuarta">Quarta:</label>
+                    <input type="number" id="phQuarta">
+                </div>
+                <div class="formStyle">
+                    <label for="phQuinta">Quinta:</label>
+                    <input type="number" id="phQuinta">
+                </div>
+                <div class="formStyle">
+                    <label for="phSexta">Sexta:</label>
+                    <input type="number" id="phSexta">
+                </div>
+            </div>  
+            <br>
+            <div class="temperatureForm">
+                <div class="formStyle">
+                    <label for="temperaturaSegunda">Segunda:</label>
+                    <input type="number" id="temperaturaSegunda">
+                </div>
+                <div class="formStyle">
+                    <label for="temperaturaTerça">Terça:</label>
+                    <input type="number" id="temperaturaTerça">
+                </div>
+                <div class="formStyle">
+                    <label for="temperaturaQuarta">Quarta:</label>
+                    <input type="number" id="temperaturaQuarta">
+                </div>
+                <div class="formStyle">
+                    <label for="temperaturaQuinta">Quinta:</label>
+                    <input type="number" id="temperaturaQuinta">
+                </div>
+                <div class="formStyle">
+                    <label for="temperaturaSexta">Sexta:</label>
+                    <input type="number" id="temperaturaSexta">
+                </div>
+            </div>
+            <br>
+            <button id="button1" type="submit">Submit</button>
+        </form>
+
+        <div class = "firstChart">
+            <canvas id="myChart"></canvas>
         </div>
-        <div>
-            <label for="temperature">Temperatura:</label>
-            <input type="number" id="temperature">
-        </div>
-        <div>
-            <label for="alcalinidade">Alcalinidade:</label>
-            <input type="number" id="alcalinidade">
-        </div>
-        <div>
-            <label for="nitrito">Nitrito:</label>
-            <input type="number" id="nitrito">
-        </div>
-        <button type="submit">Submit</button>
-    </form>
-    <br>
-    <div id="chart_div" style="width: 100%; height: 500px;"></div>
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
