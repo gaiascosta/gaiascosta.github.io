@@ -5,20 +5,35 @@
     grid-template-rows: 50px 1fr;
 }
 
-.Semana_1{
+#Semana_1{
     grid-column: 1;
     grid-row: 1/3;
 }
-.Semana_2{
+#Semana_2{
     grid-column: 2;
     grid-row: 1/3;
 }
-.Semana_3{
+#Semana_3{
     grid-column: 1;
     grid-row: 3/5;
 }
-.Semana_4{
+#Semana_4{
     grid-column: 2;
     grid-row: 3/5;
+}
+#buttonForm{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    grid-template-rows: 50px 1fr;
+    grid-column: 1/3;
+    grid-row: 5;
+}
+#button1{
+    grid-column: 3;
 }
 
+.firstChart{
+    grid-row: 6;
+    grid-column: 1/3;
+}
