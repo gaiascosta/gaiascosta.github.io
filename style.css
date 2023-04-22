@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'titleFont';
+    src: url('Fonts/Nexa-Heavy.ttf');
+}
+@font-face {
+    font-family: 'textFont';
+    src: url('Fonts/Roboto-BoldCondensed.ttf');
+}
+body{
+    background-color: #121212;
+}
+button{
+    border:none;
+    border-radius: 20px;
+    font-family: textFont;
+    letter-spacing: 0.4em;
+    width: 240px;
+    height: 300px;
+    font-size: medium;
+    box-shadow: 10px 10px 0px 0px #7D7D7D;
+    background-color: #EDEDED;
+}
+button:hover{
+    background-color: #8dadee;
+    transition: 0.2s;
+}
+button:active{
+    transform: translate(5px, 5px);
+    box-shadow: 5px 5px 0px 0px #444444;
+    transition: 0.1s;
+}
+.t1{
+    font-family: titleFont;
+    color: #EDEDED;
+    font-size: 55px;
+}
+.t1Class{
+    display: flex;
+    justify-content: center;
+    align-content:center;
+}
+.buttonContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+img{
+    width: 45%;
+}
