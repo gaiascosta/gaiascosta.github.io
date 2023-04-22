@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'titleFont';
+    src: url('../Fonts/Nexa-Heavy.ttf');
+}
+@font-face {
+    font-family: 'textFont';
+    src: url('../Fonts/Roboto-BoldCondensed.ttf');
+}
+
+body{
+    background-color: #121212;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr 14fr 1fr;
+}
+.container{
+    grid-column: 2;
+}
+#date{
+    font-family: titleFont;
+    color: #EDEDED;
+}
+.var{
+    background-color: #BFBFBF;
+    border-radius: 2em;
+    padding: 0.6em;
+    padding-left: 1.1em;
+    margin: 0.2em;
+    font-family: textFont;
+    font-size: 1.3em;
+}
+input{
+    padding: 0.9em;
+    margin-left: 0.9em;
+    border-radius: 2em;
+    border: none;
+}
+.enviar
+{
+    float: right;
+    border-radius: 2em;
+    width: min-content;
+    padding: 0.9em;
+    font-family: titleFont;
+    font-size: 1.1em;
+    border: none;
+    box-shadow: 6px 6px 0px 0px #7D7D7D;
+}
+.enviar:hover{
+    background-color: #8dadee;
+    transition: 0.2s;
+}
+.enviar:active{
+    transform: translate(3px, 3px);
+    box-shadow: 3px 3px 0px 0px #444444;
+    transition: 0.1s;
+}
