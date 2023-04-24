@@ -8,7 +8,11 @@
 }
 
 body{
+    background-image: url("../Images/new.jpg");
     background-color: #121212;
+    background-size: 125%;
+    background-repeat: repeat-y;
+    background-color: #444444;
 }
 form{
     display: grid;
@@ -20,6 +24,8 @@ form{
 #date{
     font-family: titleFont;
     color: #EDEDED;
+    margin-top: 0.01em;
+    margin-bottom: 0.5em;
 }
 .var{
     background-color: #BFBFBF;
@@ -47,7 +53,7 @@ input{
     border: none;
     box-shadow: 6px 6px 0px 0px #7D7D7D;
 }
-.enviar:hover{
+.enviar:hover, #voltar:hover{
     background-color: #8dadee;
     transition: 0.2s;
 }
@@ -55,4 +61,35 @@ input{
     transform: translate(3px, 3px);
     box-shadow: 3px 3px 0px 0px #444444;
     transition: 0.1s;
+}
+#voltar{
+    margin-top: 1em;
+    font-family: titleFont;
+    background-color:#EDEDED;
+    box-shadow: 4px 4px 0px 0px #7D7D7D;
+    width: 2%;
+    padding: 0.6%;
+}
+#voltar:active{
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px 0px #444444;
+    transition: 0.1s;
+}
+
+@media screen and (max-width: 510px){ /* Tela de Celular */
+    #voltar{
+        width: 43px;
+        margin-bottom: 6%;
+    }
+}
+@media screen and (max-width: 750px) and (min-width: 510px){ /* Tela de Tablet */
+    #voltar{
+        width: 40px;
+        margin-bottom: 3%;
+    }
+}
+@media screen and (min-width: 750px){ /* Tela de Desktop */
+    #voltar{
+        width: 35px;
+    }   
 }

@@ -20,6 +20,8 @@ form{
 #date{
     font-family: titleFont;
     color: #EDEDED;
+    margin-top: 0.01em;
+    margin-bottom: 0.5em;
 }
 .var{
     background-color: #BFBFBF;
@@ -47,12 +49,26 @@ input{
     border: none;
     box-shadow: 6px 6px 0px 0px #7D7D7D;
 }
-.enviar:hover{
+.enviar:hover, #voltar:hover{
     background-color: #8dadee;
     transition: 0.2s;
 }
 .enviar:active{
     transform: translate(3px, 3px);
     box-shadow: 3px 3px 0px 0px #444444;
+    transition: 0.1s;
+}
+#voltar{
+    margin-top: 1em;
+    font-family: titleFont;
+    width: 45px;
+    background-color:#EDEDED;
+    box-shadow: 4px 4px 0px 0px #7D7D7D;
+    width: 2%;
+    padding: 0.6%;
+}
+#voltar:active{
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px 0px #444444;
     transition: 0.1s;
 }
