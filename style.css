@@ -16,12 +16,14 @@ button{
     border:none;
     border-radius: 20px;
     font-family: textFont;
-    letter-spacing: 0.4em;
-    width: 240px;
-    height: 300px;
     font-size: medium;
+    letter-spacing: 0.4em;
     box-shadow: 10px 10px 0px 0px #7D7D7D;
     background-color: #EDEDED;
+    max-width: 80%;
+    min-width: none;
+    padding-top: 20%;
+    padding-bottom: 20%;
 }
 button:hover{
     background-color: #8dadee;
@@ -49,4 +51,14 @@ button:active{
 }
 img{
     width: 45%;
+}
+
+@media screen and (max-width: 510px){ /* Tela de Celular */
+    
+}
+@media screen and (max-width: 950px) and (min-width: 510px){ /* Tela de Tablet */
+    
+}
+@media screen and (min-width: 950px){ /* Tela de Desktop */
+      
 }
