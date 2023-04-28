@@ -80,7 +80,3 @@ main .carousel-item{
     display:block;
     overflow:clip;
 }
-
-.d-block{
-    max-height: 50px;
-}
