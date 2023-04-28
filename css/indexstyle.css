@@ -12,11 +12,11 @@ body{
 .page-wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:0.1fr 0.1fr 0.6fr 0.2fr;
+    grid-template-rows:0.1fr 0.1fr 0.8fr;
 }
 
 nav{
-    padding:0 ;
+    padding:0;
     justify-content:center;
     align-items:center;
     text-align:right;
@@ -85,7 +85,6 @@ nav{
 main{
     margin:0 5%;
     margin-top:20px;
-    padding:5%;
     text-align:justify;
     display:grid;
     gap:1rem;
@@ -110,7 +109,7 @@ main div{
 
 aside{
     margin: 0 5%;
-    padding-bottom:3%;
+    padding-bottom:5%;
 }
 
 aside ul{
@@ -118,6 +117,7 @@ aside ul{
     padding:2% 2% 3% 2%;
     border-radius: 5px;
     box-shadow:10px 10px black;
+    list-style-type: none;
 }
 
 aside h3{
@@ -135,4 +135,46 @@ aside a{
 
 aside a:hover{
     color:midnightblue;
+}
+
+footer {
+    background-color: crimson;
+    box-shadow:0px -4px black;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    width: 98%;
+    height: 20px;
+    bottom: 0;
+    padding: 1%;
+    position: fixed;
+}
+
+@media only screen and (max-width: 900px){
+    .logo{
+        font-size: 25px;
+    }
+    .menu a{
+        font-size: 17px;
+        padding: 7% 7%;
+    }
+    aside{
+        padding-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .logo{
+        font-size: 15px;
+    }
+    .menu a{
+        font-size: 15px;
+        padding: 5% 5%;
+    }
+    main {
+        grid-template-columns:repeat(1, minmax(450px, 1fr));
+    }
+    aside{
+        padding-bottom: 0;
+    }
 }
