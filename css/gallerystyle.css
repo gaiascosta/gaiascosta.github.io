@@ -72,8 +72,6 @@ main .carousel-item{
     border-radius:5px;
     padding:10%;
     box-shadow:10px 10px black;
-    width: 100%;
-    max-height: 60px;
 }
 
 .item img{
@@ -81,4 +79,8 @@ main .carousel-item{
     height:100%;
     display:block;
     overflow:clip;
+}
+
+.d-block{
+    max-height: 50px;
 }
